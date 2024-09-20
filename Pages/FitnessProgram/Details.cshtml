@@ -1,0 +1,43 @@
+﻿@page
+@model FitnessProgramManager.Pages.FitnessProgram.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Fitness Program</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FitnessProgram.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FitnessProgram.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FitnessProgram.Type)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FitnessProgram.Type)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FitnessProgram.DurationInWeeks)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FitnessProgram.DurationInWeeks)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FitnessProgram.DifficultyLevel)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FitnessProgram.DifficultyLevel)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.FitnessProgram.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

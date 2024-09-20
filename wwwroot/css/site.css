@@ -1,0 +1,99 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+
+body {
+    background-color: #fafafa; 
+}
+
+/* Custom navbar styling */
+.navbar {
+    background-color: #343a40; /* Dark grey navbar */
+}
+
+    .navbar a {
+        color: white;
+    }
+
+        .navbar a:hover {
+            color: #f39c12; /* Golden color on hover */
+        }
+
+/* Customize buttons */
+.btn-primary {
+    background-color: #007bff; /* Blue button */
+    border-color: #007bff;
+}
+
+    .btn-primary:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+
+/* Ensure table row text is visible on all backgrounds */
+table {
+    color: #333; /* Dark text for better visibility */
+}
+
+    /* Set background for table rows to ensure contrast */
+    table tr {
+        background-color: #ffffff; /* White background for rows */
+        color: #333; /* Dark grey text */
+    }
+
+        table tr:nth-child(even) {
+            background-color: #f9f9f9; /* Light grey for alternate rows */
+            color: #333; /* Dark grey text */
+        }
+
+    /* Styling for table headers */
+table th {
+    color: black !important;   /* Ensure white text for headers */
+    padding: 15px;
+}
+
+    table td {
+        padding: 15px;
+    }
+
+/* Style for rate input to stand out */
+select[name="rating"] {
+    background-color: #f0f0f0; /* Light grey background for rating dropdown */
+    color: #333; /* Dark text for readability */
+}
+
+input[type="submit"] {
+    background-color: #007bff; /* Blue submit button */
+    color: white; /* White text */
+}
+
+/* Set a dark border for better distinction between elements */
+table, th, td {
+    border: 1px solid #dee2e6;
+}
+
+/* Custom footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
